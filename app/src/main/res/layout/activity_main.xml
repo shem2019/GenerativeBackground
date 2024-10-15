@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/cameraframe"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/btnholder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraframe"
+        app:layout_constraintVertical_bias="0.08">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#673AB7"
+            android:id="@+id/cancelButton"
+            android:text="Cancel" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#673AB7"
+            android:id="@+id/captureButton"
+            android:text="Capture" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:id="@+id/launchCameraButton"
+            android:text="Launch" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
